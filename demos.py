@@ -27,7 +27,7 @@ class demo_full(object):
 
         script_dir = os.path.dirname(os.path.realpath(__file__))
         self.clothing_verts_idx = np.load(join(script_dir, 'data', 'clothing_verts_idx.npy'))
-        self.ref_mesh = Mesh(filename=join(script_dir, 'data', 'template_mesh.obj'))
+        self.ref_mesh = Mesh(filename=join(script_dir, 'data', 'Ivan_1304_OBJ.obj'))
         self.vpe = np.load(os.path.join(script_dir, 'data', 'edges_smpl.npy'))  # vertex per edge
         self.minimal_shape = self.ref_mesh.v
 
