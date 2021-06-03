@@ -10,7 +10,7 @@ from psbody.mesh import Mesh
 args, args_dict = parse_config()
 np.random.seed(args_dict['seed'])
 project_dir = os.path.dirname(os.path.realpath(__file__))
-reference_mesh_file = os.path.join(project_dir, 'data/template_mesh.obj')
+reference_mesh_file = os.path.join(project_dir, 'data/Ivan_1304_OBJ.obj')
 reference_mesh = Mesh(filename=reference_mesh_file)
 
 datadir_root = os.path.join(project_dir, 'data', 'datasets')
