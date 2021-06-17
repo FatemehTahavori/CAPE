@@ -41,7 +41,7 @@ class base_model(object):
         self.plot_latent = False
 
         self.script_path = os.path.dirname(os.path.realpath(__file__))
-        self.verts_ref = trimesh.load(os.path.join(self.script_path, '..', 'data/Ivan_1304_OBJ.obj'), process=False).vertices
+        self.verts_ref = trimesh.load(os.path.join(self.script_path, '..', 'data/template_mesh.obj'), process=False).vertices
         self.vpe = np.load(os.path.join(self.script_path, '..','data/edges_smpl.npy')) # vertex per edge
 
         if loss_mask == 'binary':
